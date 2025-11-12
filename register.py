@@ -1,7 +1,13 @@
 import SimpleITK as sitk
 
-def attempt_register(fixed, moving): 
-	print("met")
+# converts a path leading to a dicom file to an image
+def convert_file(path):
+	reader = sitk.ImageSeriesReader()
 
-	# iterate per slice
-		# apply demons on slice
+	reader.SetFileNames(reader.GetGDCMSeriesFileNames(path))
+
+	return reader.execute()
+
+
+def attempt_register(fixed, moving): 
+	
