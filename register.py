@@ -10,4 +10,8 @@ def convert_file(path):
 
 
 def attempt_register(fixed, moving): 
-	
+	img_fixed = convert_file(fixed)
+	img_moving = convert_file(moving)
+
+	#apply demons
+	#test #iterations
