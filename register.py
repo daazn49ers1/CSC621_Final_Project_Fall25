@@ -15,3 +15,6 @@ def attempt_register(fixed, moving):
 
 	#apply demons
 	#test #iterations
+
+
+print("met")

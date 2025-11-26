@@ -2,6 +2,9 @@ import os
 import sys
 import SimpleITK as sitk
 
+# (how the heck do use image viewer)
+#image_viewer = sitk.ImageViewer()
+#image_viewer.SetApplication ("~/Downloads/fiji-latest-linux64-jdk/Fiji/fiji")
 
 def main(_):
 	""" Generate a simple image and display it using the SimpleITK Show function. """
@@ -49,4 +52,5 @@ print("in test.py")
 
 image = main(1)["output_image"]
 
+#image_viewer.Execute(image)
 sitk.Show(image)
